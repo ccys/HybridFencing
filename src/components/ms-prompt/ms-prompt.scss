@@ -1,0 +1,31 @@
+ms-prompt {
+  div {
+     display: block;
+     text-align: center;
+     margin-top: 33px;
+
+     img {
+     	 width: 170px;
+   		 // height: 220px;
+    	 border-radius: 3px;
+    	 -webkit-border-radius: 3px;
+    	 background: transparent;
+    	 display: inline-block;
+    	 overflow: hidden;
+     }
+  }
+
+  .error {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    div {
+      text-align: center;
+      margin-top: -10px;
+    }
+  }
+}

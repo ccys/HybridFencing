@@ -1,0 +1,49 @@
+page-mine {
+	background: #f8f8f8;
+
+	.header {
+		height: 150px;
+		width: 100%;
+		text-align: center;
+		background: #479de6;
+		overflow: hidden;
+
+		.iconfont {
+			color: #fff;
+			font-size: 40px;
+			margin-top: 40px;
+		}
+
+		.header-name {
+			color: #fff;
+			margin-top: 20px;
+		}
+
+	}
+
+	ion-list {
+		h2 {
+			display: flex;
+			align-items: center;
+
+			.iconfont {
+				font-size: 28px;
+				color: #1976d2;
+				width: 38px;
+				text-align: center;
+			}
+
+		}
+
+	}
+
+	.fix-button {
+		position: fixed;
+		bottom: 70px;
+		left: 50%;
+		height: 2em;
+		width: 140px;
+		margin-left: -70px;
+	}
+
+}

@@ -1,0 +1,18 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>列表</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content>
+	<ion-list>
+		<ion-item-sliding *ngFor="let item of list">
+			<ion-item>
+				<h2>{{item.name}}</h2>
+			</ion-item>
+		</ion-item-sliding>
+	</ion-list>
+	<ms-prompt empty="{{loadFinished  && (!list || list.length <= 0) }}" (onErrorRefresh)="onErrorRefresh()" error="{{occurHttpError && list.length <= 0}}"></ms-prompt>
+	<ion-infinite-scroll (ionInfinite)="doInfinite($event)" *ngIf="!occurHttpError && msLiteList && msLiteList.hasMoreData()">
+		<ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="正在拼命加载..."></ion-infinite-scroll-content>
+	</ion-infinite-scroll>
+</ion-content>

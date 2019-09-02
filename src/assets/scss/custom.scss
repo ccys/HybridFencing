@@ -1,0 +1,11 @@
+@import "tabs.scss";
+@import "list.scss";
+@import "color.scss";
+
+ion-content.gray-ion-content {
+    background: #f8f8f8;
+}
+
+ion-header {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .05);
+}

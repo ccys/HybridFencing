@@ -1,0 +1,22 @@
+<!-- <ion-header>
+	<ion-navbar>
+		<ion-title>
+			系统用户
+		</ion-title>
+	</ion-navbar>
+</ion-header> -->
+<ion-content>
+	<div class='header'>
+		<div class='iconfont icon-usertie'></div>
+		<div class='header-name'>当前用户</div>
+	</div>
+	<ion-list>
+		<button ion-item *ngFor="let item of menu" (click)='gotoMenu(item.path)'>
+			<h2><span class='iconfont {{item.icon}}'></span>{{item.name}}</h2>
+			<ion-note item-end>
+				<p>{{item.version}}</p>
+			</ion-note>
+		</button>
+	</ion-list>
+	<button ion-button color='danger' outline round class="fix-button" (click)='logout()'>退出登录</button>
+</ion-content>

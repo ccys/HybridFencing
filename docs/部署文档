@@ -1,0 +1,23 @@
+1.english.jsk的密码为MMs12345,别名为：english
+
+部署步骤：
+  1.先生成apk:ionic cordova build android --prod --release
+  2.给apk使用jks加密：jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore docs/english.jks english.apk english
+    如果不加密，那么无法在华为pad上安装.
+
+android.开发提示：
+   ionic cordova run android --device
+
+ios.部署：
+  1.ionic cordova build ios --prod --release
+  2.打开xcode进行版本升级
+
+webapp.pc部署：
+	1.ionic build --prod
+	2.npm run dist
+webapp.终端提示：
+	1.ionic serve --no-open
+	2.另外一个终端electron .
+
+
+    

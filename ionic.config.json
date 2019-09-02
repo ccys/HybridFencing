@@ -1,0 +1,7 @@
+{
+  "name": "TingRoomApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

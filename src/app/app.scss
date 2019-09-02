@@ -1,0 +1,197 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+// ionic common 
+.tab-button-icon.icon.icon-md.ion-ios-videocam-outline {
+    font-size: 2.8rem;
+}
+
+.tab-button-icon.icon.icon-md.ion-ios-paper-outline {
+    font-size: 2.1rem;
+}
+
+.toolbar .segment-md .segment-button, .toolbar .segment-md .segment-button {
+    font-size: 1.5rem;
+}
+
+.item-md ion-thumbnail,.item-android ion-thumbnail,.item-ios ion-thumbnail {
+	min-width: 70px;
+    min-height: 70px;
+}
+
+.back-button.show-back-button.back-button-ios {
+    // color:#488aff;
+}
+
+.tabs-md[tabsLayout=icon-top] .has-icon .tab-button-text {
+    margin-top: 1px;
+}
+
+.toolbar-ios .segment-button {
+    // max-width: 300px;
+}
+
+.tabs-ios .tabbar {
+    margin-bottom: 6px;
+    padding-top: 6px;
+}
+
+.ios .menu-content-reveal {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.list-icon.home-icon {
+    color: white;
+    margin-right: 5px;
+}
+
+.toolbar-content {
+    display: flex;
+}
+
+.ms_detail_navbar.toolbar-ios {
+    ion-title {
+        position: relative;
+        padding-left: 11px !important;
+        padding-top: 0 !important;
+    }
+
+    .toolbar-title-ios {
+        text-align: left;
+    }
+
+    & {
+        .msicon-jian, .msicon-jia {
+            color:#488aff;
+        }
+
+        .right {
+            color: black;
+        }
+
+        .right .selected {
+            color: #488aff;
+        }
+    }
+}
+
+.header-md {
+	border: none;
+}
+
+.header-md::after {
+    content: '';
+    display: none;
+}
+
+.content-ios ion-range {
+    -webkit-box-flex: 1;
+}
+
+ .toolbar-background-md {
+      background: #479DE6;
+ }
+
+ .toolbar-title-md,  .back-button.show-back-button {
+ 	  color: white;
+ } 
+
+ .toolbar-title-md {
+ 	  font-size: 1.4rem;
+ }
+
+ .ms-home-text {
+    color: white;
+    vertical-align: middle;
+    line-height: .67;
+    font-size: 1.4rem;
+    margin-right: 5px;
+ }
+
+.list-link {
+	position: relative;
+    cursor: pointer;
+}
+
+
+.list-link:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    right: 15px;
+    top: 50%;
+    margin-top: -4px;
+    border: 2px solid #ddd;
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.msicon-vip.list-vip {
+    margin-left: 6px;
+    color: #d80000;
+    font-size: 1.6rem;
+}
+
+.level-0 {
+    color: #9c9c9c;
+}
+
+.level-1 {
+    color: #1ebd45;
+}
+
+.level-2 {
+    color: #ffaf31;
+}
+
+.rotate {
+    animation: cycle 15s infinite linear;
+    -webkit-animation: cycle 15s infinite linear;
+}
+
+@keyframes cycle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes cycle {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.iframe-issue {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    -webkit-overflow-scrolling: touch !important;
+    overflow: scroll !important;
+}
