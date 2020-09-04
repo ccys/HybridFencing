@@ -79,7 +79,7 @@
     "@types/core-js": "^0.9.46",
     "electron": "^1.8.4",
     "electron-builder": "^20.28.4",
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.13.1",
     "typescript": "2.4.2"
   },
   "description": "打出去",
