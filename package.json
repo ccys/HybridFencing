@@ -46,7 +46,7 @@
     "com.mansuo.plugins": "file:../plugins/MSApp",
     "cordova": "^7.1.0",
     "cordova-android": "7.1.4",
-    "cordova-browser": "^5.0.4",
+    "cordova-browser": "^6.0.0",
     "cordova-plugin-advanced-http": "^1.11.1",
     "cordova-plugin-brightness": "^0.1.5",
     "cordova-plugin-broadcaster": "^3.1.1",
